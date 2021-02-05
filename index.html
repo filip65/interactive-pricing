@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <img class="pattern-bg" src="./images/bg-pattern.svg" alt="">
+  <img class="pattern-cicles" src="./images/pattern-circles.svg" alt="">
+  <h1 class="body-title">Simple, traffic-based pricing</h1>
+  <div class="body-text">
+    <p>Sign-up for our 30-day trial.</p>
+    <p>No credit card required</p>
+  </div>
+  <div class="card">
+    <div class="slider-area">
+      <div class="card-header">
+        <p class="pageviews"><span class="pageviews-num">20K</span> PAGEVIEWS</p>
+        <p class="month-text desktop"><span class="month-price">$8.00</span>/month</p>
+      </div>
+      <input type="range" id="range" min="0" max="4" value="0">
+      <p class="month-text mobile"><span class="month-price">$8.00</span>/month</p>
+      <div class="monthly-billing">
+        <p>Monthly Billing</p>
+        <input type="checkbox" id="discount-switch">
+        <p>Yearly Billing</p>
+        <p class="percentage">-25%<span class="desktop">discount</span></p>
+      </div>
+    </div>
+    <div class="card-footer">
+      <ul class="benefits">
+        <li class="benefit">
+          <img src="./images/icon-check.svg" alt="">
+          <p>Unlimited websites</p>
+        </li>
+        <li class="benefit">
+          <img src="./images/icon-check.svg" alt="">
+          <p>100% data ownership</p>
+        </li>
+        <li class="benefit">
+          <img src="./images/icon-check.svg" alt="">
+          <p>Email reports</p>
+        </li>
+      </ul>
+
+      <button class="btn-trial">Start my trial</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>

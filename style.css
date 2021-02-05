@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(230, 100%, 99%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    padding: 50px 20px;
+
+}
+
+.desktop{
+    display: none;
+}
+
+.pattern-bg {
+    position: absolute;
+    top: 0;
+    z-index: -100;
+    width: 100%;
+    height: 50%;
+}
+
+.pattern-cicles{
+    position: absolute;
+    top: 6.5rem;
+    z-index: -1;
+    width: 200px;
+}
+
+.body-title{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: hsl(227, 35%, 25%);
+}
+
+.body-text{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-bottom: 5px;
+    color: hsl(225, 20%, 60%);
+}
+
+
+.card{
+    background-color: white;
+    margin-top: 65px;
+    width: 95%;
+    max-width: 600px;
+    border-radius: 10px;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
+    box-shadow: 2px 20px 57px -23px rgba(0,0,0,0.75);
+}
+
+.slider-area{
+    padding: 40px 0;
+    border-bottom: 1px solid hsl(225, 20%, 60%);
+}
+
+.slider-area > input{
+    -webkit-appearance: none;
+    height: 10px;
+    width: 80%;
+    background-color: hsl(224, 65%, 95%);
+    border: none;
+    margin: 50px 0;
+    border-radius: 25px;
+    box-shadow: 0px 43px 60px -16px rgba(0,0,0,1);
+    outline: none;
+}
+
+.slider-area > input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 45px;
+    width: 45px;
+    background-color: hsl(174, 86%, 45%);
+    border-radius: 50%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    box-shadow: 0px 43px 60px -16px rgba(0,0,0,1);
+    /* background-size: cover; */
+}
+
+.slider-area > input::-moz-range-progress{
+    height: 10px;
+    background-color: hsl(174, 77%, 80%);
+}
+
+.slider-area .month-price{
+    font-size: 1.8rem;
+}
+
+.month-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.month-price{
+    color: hsl(227, 35%, 25%);
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.monthly-billing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.monthly-billing input[type="checkbox"]{
+    margin: 0 12px;
+    background-color: hsl(224, 65%, 95%);
+    position: relative;
+    -webkit-appearance: none;
+    width: 48px;
+    height: 24px;
+    border-radius: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.monthly-billing input:checked[type="checkbox"]{
+    background-color: hsl(174, 86%, 45%);
+}
+
+.monthly-billing input:checked[type="checkbox"]:before{
+    left: 28px;
+}
+
+.monthly-billing input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    top: 4px;
+    left: 4px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.percentage{
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    padding: 3px 6px;
+    border-radius: 18px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.benefints{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.benefits {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.benefit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit > img{
+    margin-right: 15px;
+}
+
+.benefit{
+    margin-bottom: 20px;
+}
+
+.benefit:last-child{
+    margin-bottom: 0;
+}
+
+.btn-trial{
+    color: hsl(225, 20%, 60%);
+    background-color: hsl(227, 35%, 25%);
+    border: 0;
+    padding: 16px 50px;
+    border-radius: 60px;
+    margin: 35px;
+    font-weight: 900;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-trial:hover{
+    color: white;
+}
+
+@media(min-width: 992px){
+
+
+    .body-title{
+        font-size: 2rem;
+    }
+
+    .body-text{
+        flex-direction: row;
+    }
+
+    .card .pageviews{
+        display: inline-block;
+    }
+
+    .card-header{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .card-header .month-price{
+        font-size: 2rem;
+    }
+
+    .card-header .desktop{
+        display: inline-block;
+    }
+
+   #range{
+        margin-top: 0;
+    }
+
+    .card .slider-area{
+        padding-top: 50px;
+    }
+
+    .card .slider-area .mobile{
+        display: none;
+    }
+
+    .card-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:35px 50px;
+    }
+
+    .card-footer .benefits ul{
+        text-align: left;
+    }
+
+    .btn-trial{
+        margin: 0;
+    }
+
+    .card-footer > ul{
+        margin: 0;
+    }
+
+    .card-footer > ul li{
+        justify-content: left;
+    }
+
+
+}
